@@ -20,7 +20,8 @@ while (tentativas <= 3) {
 var chute = parseInt(prompt("Digite seu chute!"));
 
 if (chute == numeroPensado) {
-    mostra ("Voce Acertou")
+    mostra ("Voce Acertou , o numero pensado era" + numeroPensado);
+    break;
 }else {
     mostra ("voce errou");
 
