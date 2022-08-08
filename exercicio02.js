@@ -13,12 +13,19 @@ function mostra (frase){
 
 
 var numeroPensado = Math.round(Math.random()* 10);
+var tentativas = 1;
+
+
+while (tentativas <= 3) {
 var chute = parseInt(prompt("Digite seu chute!"));
 
 if (chute == numeroPensado) {
     mostra ("Voce Acertou")
 }else {
-    mostra ("voce errou o numero pensado foi " numeroPensado);
+    mostra ("voce errou");
+
 
 }
-
+mostra ("fim");
+ tentativas++;
+}
