@@ -10,7 +10,7 @@ function mostra (frase){
   
 }
 
-
+// Advinha numero
 
 var numeroPensado = Math.round(Math.random()* 10);
 var tentativas = 1;
