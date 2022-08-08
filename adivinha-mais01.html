@@ -8,9 +8,27 @@
 
 
 
-var segredos = [
-         5,7,10,2
-]
+function sorteia () {
+    return Math.round(Math.random() * 10);
+}
+
+
+function sorteiaNumeros (quantidade) {
+    var segredos = [];
+    var numero = 1
+    while ( numero <= quantidade){
+        segredos.push (sorteia());
+    }
+    return segredos;
+}
+
+
+
+
+var segredos = sorteiaNumeros(10);
+
+
+
 
 var input = document.querySelector('input');
 
