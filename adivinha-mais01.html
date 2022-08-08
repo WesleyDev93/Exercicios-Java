@@ -8,22 +8,30 @@
 
 
 
-var segredo = 5
+var segredos = [
+         5,7,10,2
+]
 
 var input = document.querySelector('input');
 
 
 function verifica () {
-    if (input.value === segredo) {
+    var achou = false;
+    for (var posicao = 0; posicao < segredos.length; posicao++){
+        if (input.value === segredos [posicao]) {
 
 alert("VOCE ACERTOU");
-} else {
-alert("VOCE ERROU");
+achou = true;
+break;
+} 
+    }
+ if(achou == false) {
+    alert ("voce errou");
  }
  input.value = "";
  input.focus();
-}
 
+}
 var button = document.querySelector ('button');
 
 button.onclick = verifica;
